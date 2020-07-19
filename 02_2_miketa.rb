@@ -6,6 +6,6 @@
 # frozen_string_literal: true
 
 require 'date'
-require './02_miketa_calendar'
+require './02_2_miketa_calendar'
 
 Calendar.new(Date.today).make_calendar

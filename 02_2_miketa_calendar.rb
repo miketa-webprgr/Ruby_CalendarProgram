@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# 日付を入力するとその日付が属する月のカレンダーを表示するメソッドを持ったクラス
 class Calendar
   DAYS_OF_WEEK = ' Su Mo Tu We Th Fr Sa'
 
@@ -72,5 +75,4 @@ class Calendar
     # その場合、8日も水曜日なので、(8 + 3 - 1) % 7 => 3 となる
     @day_of_week_array = @date_array.map { |n| (n + @firstday.wday - 1) % 7 }
   end
-
 end
